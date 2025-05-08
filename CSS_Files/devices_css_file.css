@@ -1,0 +1,151 @@
+.info-side {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px double white;
+    color: white;
+}
+
+#device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#device label {
+    font-size: 25px;
+    font-family: ForAll;
+}
+
+#device input {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    background-color: rgba(14, 100, 124, 0.2);
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: ForAll;
+    text-align: center;
+    border-bottom: 2px solid rgb(5, 160, 202);
+    cursor: pointer;
+}
+
+/* Sekcija za temperaturu i vlažnost */
+#temp_humi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#temp_humi label,
+#temp_humi span {
+    font-size: 25px;
+    font-family: ForAll;
+}
+
+#temp label {
+    margin-right: 5px;
+}
+
+#humi label {
+    margin-right: 5px;
+}
+
+.values_TH {
+    color: rgba(30, 250, 1, 0.993);
+}
+
+/* Kontrolna sekcija */
+.control-side {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.control-side p {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-family: ForAll;
+}
+
+.control-side button {
+    width: 45%;
+    max-width: 250px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(14, 100, 124, 0.7);
+    border-radius: 15px;
+    border: none;
+    font-family: ForAll;
+}
+
+.control-side button:hover {
+    background-color: rgb(22, 130, 160);
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 15px;
+    font-family: ForAll;
+    color: white;
+    border-top: 1px solid white;
+}
+
+@media (max-width: 480px) {
+    #device input {
+        height: 30px;
+    }
+    #temp_humi {
+        flex-direction: column;
+        align-items: center;
+    }
+    #temp_humi label,
+    #temp_humi span {
+        font-size: 20px;
+    }
+    .control-side {
+        margin-top: 20px;
+    }
+    .control-side button {
+        width: 100%;
+        height: 50px;
+    }
+    #status {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #device input {
+        height: 30px;
+    }
+    #temp_humi {
+        flex-direction: column;
+        align-items: center;
+    }
+    #temp_humi label,
+    #temp_humi span {
+        font-size: 20px;
+    }
+    .control-side {
+        margin-top: 20px;
+    }
+    .control-side button {
+        width: 100%;
+        height: 50px;
+    }
+    #status {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

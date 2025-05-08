@@ -1,0 +1,112 @@
+@font-face {
+    font-family: ForAll;
+    src: url(../../fonts/VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: Title;
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+
+.LogUserContainer{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 30px;
+}
+
+.LogUserContainer:hover{
+    background-color: rgb(71, 193, 226,0.3) ;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.LogUserContainer img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.DropDown span{
+    font-family: ForAll ;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px double white;
+    width: 90%;
+    text-align: center;
+}
+
+.DropDown{
+    background-color: rgb(15, 138, 168) ;
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    width: 200px;
+    height: 90px;
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.DropDown button{
+    height: 25px;
+    width: 180px;
+    background-color: rgb(71, 193, 226);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: ForAll ;
+}
+
+.DropDown button:hover{
+    background-color: rgb(31, 96, 114);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .LogUserContainer{
+        top: 4%;
+        right: 8%;
+        width: 50px;
+        height: 50px;
+    }
+    .LogUserContainer:hover{
+        background-color: rgb(71, 193, 226, 0.3) ;
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .DropDown{
+        top: 11%;
+        right: 11%;
+        background-color: rgb(48, 125, 146);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .LogUserContainer{
+        top: 9%;
+        right: 13%;
+        width: 50px;
+        height: 50px;
+    }
+    .LogUserContainer:hover{
+        background-color: rgb(71, 193, 226, 0.3) ;
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .DropDown{
+        top: 16%;
+        background-color: rgb(48, 125, 146);
+    }
+}

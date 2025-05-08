@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_Files/navigation_bar_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/main_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/logusercontainer_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/diagram_css_file.css">
+    <title>Smart Heat</title>
+</head>
+<body>
+    <main class="MainContainer">
+        <header>Smart Heat</header>
+        <nav class="NavigationBar">
+            <ul>
+                <li><a href="devices.html">Devices</a></li>
+                <li><a href="diagram.html">Assets</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <h1>Diagrams, Schematics and Documents</h1>
+        <div class="FolderContainer" id="Folder_Diagram">
+            <img src="images/folder.png" alt="">
+            <span>Diagrams</span>
+        </div>
+        <div class="FileContainer" id="FileContainer_Diagram">
+            <div class="File" id="File_Diagram"> 
+                <img src="images/schematic.png" alt="">
+                <span>Wiring diagram</span>
+            </div>
+            <div class="ControlButons">
+                <button id="DownloadBTN_Diagram">Download</button>
+            </div>
+        </div>
+
+        <div class="FolderContainer" id="Folder_Documents">
+            <img src="images/folder.png" alt="">
+            <span>Documents</span>
+        </div>
+        <div class="FileContainer" id="FileContainer_Document">
+            <div class="File" id="File_Document"> 
+                <img src="images//pdf-file.png" alt="">
+                <span>Documentation</span>
+            </div>
+            <div class="ControlButons">
+                <button id="DownloadBTN_Document">Download</button>
+            </div>
+        </div>
+    </main>
+    <div class="LogUserContainer" id="LogUser_Container">
+        <img src="images/user.png" alt="">
+      </div>
+      <div class="DropDown" id="DropDown"> 
+        <span id="User_Username"></span>
+        <button id="Logout">Log out</button>
+      </div>
+      <script src="JS_Files/diagram_js_file.js"></script>
+      <script src="JS_Files/logusercontainer_js_file.js"></script>
+</body>
+</html>

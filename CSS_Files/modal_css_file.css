@@ -1,0 +1,160 @@
+@font-face {
+    font-family: ForAll;
+    src: url(../../fonts/VarelaRound-Regular.ttf);
+}
+
+@font-face {
+    font-family: Title;
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+
+.overlayer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modalMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 25%;
+    background-color: rgba(15, 65, 78, 0.9);
+    z-index: 2;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.MessageContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.MessageContent h2 {
+    font-family: ForAll;
+    margin-bottom: 10px;
+}
+
+.MessageContent p {
+    font-family: ForAll;
+    font-size: 16px;
+}
+
+.Control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 10px;
+    gap: 80px;
+}
+
+.Control button {
+    width: 200px;
+    height: 30px;
+    background-color: rgba(50, 143, 168);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: ForAll;
+    font-size: 16px;
+}
+
+.Control button:hover {
+    border: 3px solid white;
+    background-color: rgb(36, 121, 145);
+}
+
+@media  (max-width: 480px) {
+    .modalMessage {
+        width: 90%;
+        height:20%;
+    }
+    .MessageContent p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .Control {
+        gap: 10px;
+    }
+
+    .Control button {
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .modalMessage {
+        width: 80%;
+        height:20%;
+    }
+    .MessageContent p {
+        font-size: 12px;
+        text-align:center;
+    }
+    .Control {
+        gap: 10px;
+    }
+    .Control button {
+        width: 180px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .modalMessage {
+        width: 50%;
+        height:20%;
+    }
+    .MessageContent p {
+        font-size: 16px;
+        text-align:center;
+    }
+    .Control {
+        gap: 10px;
+    }
+    .Control button {
+        width: 180px;
+        height: 25px;
+        font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1440px) and (max-width: 1919px) {
+    .modalMessage {
+        width: 50%;
+        height:20%;
+    }
+    .MessageContent p {
+        font-size: 16px;
+        text-align:center;
+    }
+    .Control {
+        gap: 10px;
+    }
+    .Control button {
+        width: 180px;
+        height: 25px;
+        font-size: 14px;
+    }
+  }
+  

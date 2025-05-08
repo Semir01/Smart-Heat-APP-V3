@@ -1,0 +1,135 @@
+.Auto {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+  .Auto label{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    font-family: ForAll;
+    margin-left: 60px;
+  }
+  .Butons{
+    margin-left: 60px;
+  }
+  .Butons button {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgba(14, 100, 124, 0.7);
+    font-family: ForAll;
+    font-size: 20px;
+  }
+  .Butons button:hover {
+    background-color: rgb(22, 130, 160);
+    cursor: pointer;
+  }
+  #temp_setings{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 10px;
+    gap: 10px;
+  }
+  #temp_setings label{
+    font-size: 25px;
+    font-family: ForAll;
+    color: white;
+  }
+  #temp_setings input{
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    background-color: rgba(14, 100, 124, 0.3);
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 2px solid rgb(22, 130, 160);
+  }
+  #MAX_TEMP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+  }
+  #MIN_TEMP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  #taskOn{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color: beige;
+    font-weight: bold
+  }
+  #taskOn:hover{
+    background-color: rgb(245, 77, 77);
+  }
+  #status {
+    font-size: 25px;
+    padding: 15px;
+    font-family: ForAll;
+    color: white;
+  }
+
+
+  @media  (max-width: 480px) {
+    .Auto {
+      justify-content: center;
+      align-items: center;
+    }
+    .Auto label ,  .Butons{
+      margin-left: 0px;
+    }
+    #temp_setings input{
+      height: 30px;
+      font-size: 20px;
+    }
+    #temp_setings label{
+      font-size: 20px;
+    }
+    #MAX_TEMP{
+      margin-left: 0px;
+    }
+    #status {
+      font-size: 16px;
+    }
+    .Butons button {
+      padding: 8px;
+      width: 120px;
+      height: 35px;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Auto {
+    justify-content: center;
+    align-items: center;
+  }
+  .Auto label ,  .Butons{
+    margin-left: 0px;
+  }
+  #temp_setings input{
+    height: 30px;
+    font-size: 20px;
+  }
+  #MAX_TEMP{
+    margin-left: 0px;
+  }
+  #status {
+    font-size: 16px;
+  }
+  .Butons button {
+    padding: 8px;
+    width: 100px;
+  }
+}

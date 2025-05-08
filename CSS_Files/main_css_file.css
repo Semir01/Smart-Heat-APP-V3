@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: ForAll;
+    src: url(../../fonts/VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: Title;
+    src: url(../fonts/OleoScript-Regular.ttf);
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/technology-7997153_1280.jpg') no-repeat center center/cover;
+}
+.MainContainer {
+    padding: 10px;
+    width: 70%;
+    height: 80%;
+    background-color: rgba(50, 143, 168, 0.2);
+    border-radius: 15px;
+}
+header {
+    font-size: 70px;
+    font-family: Title;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px double white;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .MainContainer {
+        width: 80%;
+        height: 90%;
+    }
+    header{
+        margin-top: 40px;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    MainContainer {
+        width: 80%;
+        height: 90%;
+    }
+    header{
+        margin-top: 30px;
+        font-size: 50px;
+    }
+}

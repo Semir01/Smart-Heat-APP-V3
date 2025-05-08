@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_Files/navigation_bar_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/main_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/settings_css_file.css">
+    <link rel="stylesheet" href="CSS_Files/logusercontainer_css_file.css">
+    <title>Smart Heat</title>
+</head>
+<body>
+    <main class="MainContainer">
+        <header>Smart Heat</header>
+        <nav class="NavigationBar">
+            <ul>
+                <li><a href="devices.html">Devices</a></li>
+                <li><a href="diagram.html">Assets</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <div id="temp_setings">
+            <div id="MAX_TEMP">
+              <label for="max_temp">Max Temp°C</label>
+              <input type="text" id="max_temp">
+            </div>
+            <div id="MIN_TEMP">
+              <label for="min_temp">Min Temp°C</label>
+              <input type="text" id="min_temp">
+            </div>
+            
+          </div>
+          <div class="Auto">
+            <label for="">Automatic activation</label>
+            <div class="Butons">
+              <button id="AutoON">ON</button>
+              <button id="AutoOFF">OFF</button>   
+            </div>
+        </div>
+        <div class="status" id="status">Status: Unknown</div>
+    </main>
+    <div class="LogUserContainer" id="LogUser_Container">
+      <img src="images/user.png" alt="">
+    </div>
+    <div class="DropDown" id="DropDown"> 
+      <span id="User_Username"></span>
+      <button id="Logout">Log out</button>
+    </div>
+    <script type="module" src="JS_Files/settings_js_file.js"></script>
+    <script src="JS_Files/logusercontainer_js_file.js"></script>
+</body>
+</html>
