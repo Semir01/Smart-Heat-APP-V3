@@ -19,7 +19,7 @@ const char* password = "semirjazvin";
 #define DATABASE_URL "https://smartheat-951e2-default-rtdb.firebaseio.com/"
 
 //Pin and senzor type
-#define DHTPIN D2
+#define DHTPIN D3
 #define DHTTYPE DHT22
 
 //Ceating objects
