@@ -7,7 +7,6 @@ const FileContainer_Document = document.getElementById('FileContainer_Document')
 const File_Diagram = document.getElementById('File_Diagram');
 const File_Document = document.getElementById('File_Document');
 
-
 const DownloadBTN_Diagram = document.getElementById('DownloadBTN_Diagram');
 const DownloadBTN_Document = document.getElementById('DownloadBTN_Document');
 
